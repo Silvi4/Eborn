@@ -1,0 +1,36 @@
+@import '../../scss/index.scss';
+
+.menu-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65px;
+
+    &__left {
+        padding-left: 20px;
+        flex-direction: column;
+        align-self: center;
+
+        span {
+            font-family: 'Fredericka the Great', cursive;
+            font-size: xx-large;
+            padding-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $menuTopLinks;
+        }
+    }
+
+    &__right {
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: $menuTopLinks;
+            padding-right: 20px;
+        }
+    }
+}

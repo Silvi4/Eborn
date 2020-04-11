@@ -1,0 +1,83 @@
+@import "../../../scss/index.scss";
+
+.content-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.container-card-product {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+
+    @media (min-width: $media-breackpoint-up-lg) {
+        width: 30%;
+    }
+
+    &__box {
+        position: relative;
+        background-color: black;
+        height: 600px;
+
+        img {
+            height: 600px;
+            width: 100%;
+        }
+
+        .etiqueta {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            opacity: 0.9;
+            text-align: center;
+            height: 50px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        &:hover {
+            img {
+                opacity: 0.4;
+                transition: ease-out 1s;
+            }
+
+            .etiqueta {
+                animation-name: CartDiv;
+                animation-duration: 0.5s;
+                display: none;
+                bottom: 0;
+
+                @media (min-width: $media-breackpoint-up-md) {
+                    display: block;
+                }
+
+                span {
+                    color: #000;
+                    position: relative;
+                    top: 25%
+                }
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5px;
+
+        span,p {
+            padding: 0 10px;
+            margin: 0;
+        }
+    }
+
+    @keyframes CartDiv {
+        from {opacity: 0;}
+        to {opacity: 0.9;}
+    }
+}

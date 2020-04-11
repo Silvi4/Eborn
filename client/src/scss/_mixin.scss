@@ -1,0 +1,11 @@
+@mixin flex-structure-a {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-structure-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

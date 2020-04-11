@@ -1,0 +1,21 @@
+@import '../../scss/index.scss';
+
+.cartIcon {
+    @include flex-structure-b;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+    &__shopping {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__counter {
+        position: absolute;
+        font-size: 10px;
+        font-weight: $cartIcon;
+        bottom: 8px;
+    }
+}
