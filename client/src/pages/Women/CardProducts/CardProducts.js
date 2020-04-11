@@ -16,7 +16,7 @@ function CardProducts({products, dispatchSetProduct}) {
                 <div key={index} className="container-card-product">
                     <div className="container-card-product__box">
                         <Link to="/women"> {/* provisional...*/}
-                            <img src={product.imgUrl}/>
+                            <img src={product.imgUrl} alt="product-img"/>
                         </Link>
                         <div onClick={() => {dispatchSetProduct(product)}} className="etiqueta">
                             <span><FontAwesomeIcon style={{marginRight: "10px"}} icon={faShoppingCart} color='green' />Añdir al carrito</span>
