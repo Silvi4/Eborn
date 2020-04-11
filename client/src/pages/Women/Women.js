@@ -17,6 +17,8 @@ export default function Women() {
                 
                 if (response && response.status === 200 && response.data['products']) {
                     setProducts(response.data['products'])
+                } else {
+                    // Notification error
                 }
             }catch(err) {
                return console.error
